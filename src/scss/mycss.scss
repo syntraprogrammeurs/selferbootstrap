@@ -6,12 +6,15 @@
   font-family: roboto-md;
   src: url('src/webfonts/Roboto-Medium.ttf');
 }
+
+
 /*VARIABELEN*/
 $myorange:#f26c4f;
 
 /* STARTING POINT FOR ALL MOBILE CSS*/
 #bghero{
   background:url('../images/bg-hero.jpg') no-repeat;
+  background-size:cover;
 }
 .nav-link{
     &:hover{
