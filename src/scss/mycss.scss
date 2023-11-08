@@ -1,0 +1,33 @@
+@font-face {
+  font-family: poppins-sb;
+  src: url('src/webfonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: roboto-md;
+  src: url('src/webfonts/Roboto-Medium.ttf');
+}
+/*VARIABELEN*/
+$myorange:#f26c4f;
+
+/* STARTING POINT FOR ALL MOBILE CSS*/
+#bghero{
+  background:url('../images/bg-hero.jpg') no-repeat;
+}
+.nav-link{
+    &:hover{
+      border-top:3px solid red;
+  }
+}
+
+/*THIS IS THE STARTING POINT OF ALL OTHER SCREEN WIDTHS*/
+@media (min-width: 992px) {
+    #logo{
+    position:absolute;
+  }
+  .nav-link{
+    border-top:3px solid transparent;
+    &:hover{
+      border-top:3px solid $myorange;
+    }
+  }
+}
